@@ -7,11 +7,144 @@
     <meta name="author" content="Kaliev_Rauan">
     <title>Интернет-магазин книг</title>
     <link rel="stylesheet" href="styles.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    ﻿#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#content {
+    position: relative;
+    z-index: 1;
+    color: white; 
+}
+
+.styled-div {
+    border: 1px solid black;
+    margin-left: 3cm;
+    margin-right: 1cm;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    padding-left: 1.5cm;
+    background-color: rgba(192, 192, 192, 0.8); 
+    font-family: 'Times New Roman', serif;
+    font-size: 14pt;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.styled-div:hover {
+    transform: scale(1.05);
+}
+
+.styled-div p:first-letter {
+    font-size: 18pt;
+}
+
+.styled-table {
+    background-color: rgba(255, 255, 255, 0.9); 
+    color: black; 
+}
+
+.styled-table th {
+    text-align: center;
+}
+
+.styled-table td:first-child {
+    text-align: justify;
+}
+
+.styled-table td:nth-child(2) {
+    text-align: center;
+}
+
+.styled-table tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: rgba(240, 240, 240, 0.9); 
+}
+
+.float-img {
+    float: left;
+    margin-right: 10px;
+}
+
+a:link {
+    color: purple; 
+}
+
+a:visited {
+    color: darkmagenta; 
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: orange;
+}
+
+p {
+    color: black;
+}
+
+.book-link {
+    color: purple !important; 
+}
+
+.price {
+    color: white;
+}
+
+.relative-position {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.absolute-position {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.fixed-position {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.sticky-position {
+    position: sticky;
+    top: 50px;
+}
+
+ol {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.white-text {
+    color: white;
+}
 </head>
 <body>
     <video autoplay muted loop id="bg-video">
